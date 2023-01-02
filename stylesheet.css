@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+.checked {
+  color: orange;
+}
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  color: white;
+  font-size: 25px;;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn-wrapper p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background: linear-gradient(rgba(35, 114, 130, 0.9), #7db4e6);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+dt {
+  font-weight: bolder;
+}
+dd {
+  margin-bottom: 10px;
+}
+.company {
+  border: solid 3px #7db4e6; /*線色*/
+  padding: 0.5em; /*文字周りの余白*/
+  border-radius: 0.5em; /*角丸*/
+  font-weight: bolder;
+  font-size: larger;
+}
+h3 {
+  padding: 0.25em 0.5em; /*上下 左右の余白*/
+  color: #494949; /*文字色*/
+  background: transparent; /*背景透明に*/
+  border-left: solid 5px #7db4e6; /*左線*/
+  font-weight: bolder;
+}
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.heading > h2 {
+  border-bottom: solid 2px #7db4e6;
+  font-weight: bolder;
+}
+
+p,
+h2,
+h3,
+h4,
+li {
+  text-align: left;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: bolder;
+}
+
+@media all and (max-width: 750px) {
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
