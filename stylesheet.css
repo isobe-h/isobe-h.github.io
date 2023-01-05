@@ -52,13 +52,11 @@ header {
   z-index: 10;
 }
 
-.header-left {
-  float: left;
+.header-left a{
+  color: aliceblue;
 }
-
-.header-right {
-  float: right;
-  margin-right: -25px;
+.header-left{
+  text-align: center;
 }
 dt {
   font-weight: bolder;
