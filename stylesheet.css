@@ -13,10 +13,10 @@ a {
 }
 .logo {
   color: white;
-  font-size: 25px;;
+  font-size: 25px;
 }
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 0 15px;
   margin: 0 auto;
@@ -62,18 +62,31 @@ header {
 }
 dt {
   font-weight: bolder;
+  position: relative; /* important for absolute child to work */
+  padding: 0 0 0.3em;
 }
 dd {
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }
+
+dt::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  background: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .company {
-  border: solid 3px #7db4e6; /*線色*/
-  padding: 0.5em; /*文字周りの余白*/
-  border-radius: 0.5em; /*角丸*/
   font-weight: bolder;
   font-size: larger;
 }
-h3 {
+.heading > h3 {
   padding: 0.25em 0.5em; /*上下 左右の余白*/
   color: #494949; /*文字色*/
   background: transparent; /*背景透明に*/
@@ -115,7 +128,6 @@ li {
 .heading h2 {
   font-weight: bolder;
 }
-
 @media all and (max-width: 750px) {
   h2 {
     font-size: 18px;
