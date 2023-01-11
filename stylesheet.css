@@ -15,15 +15,6 @@ a {
   width: 80%;
   margin: 0 auto;
 }
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
 .btn {
   padding: 8px 24px;
   color: white;
