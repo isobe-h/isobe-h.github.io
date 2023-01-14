@@ -73,10 +73,10 @@ dt::after {
   order: 2;
   width: 35%;
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 #left {
-  font-size: 13px;
+  font-size: 15px;
   order: 1;
   width: 65%;
 }
