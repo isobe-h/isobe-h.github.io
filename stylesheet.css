@@ -11,40 +11,42 @@ body {
 a {
   text-decoration: none;
 }
+ul{
+  padding-left: 10px;
+}
+li{
+  padding-bottom: 0.5em;
+}
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  padding-top: 5rem;
+  color: #5f5d60;
+  display: flex;
+  justify-content: space-between;
 }
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
+.container h3 {
+  padding: 0.25em 0.5em; /*上下 左右の余白*/
+  color: #494949; /*文字色*/
+  background: transparent; /*背景透明に*/
+  border-left: solid 5px #7db4e6; /*左線*/
+  font-weight: bolder;
+  text-align: left;
 }
-
-.btn:hover {
-  opacity: 1;
-}
-.logo {
-  color: white;
-  font-size: 25px;
-  margin: auto 0;
-}
-header {
-  height: 40px;
-  width: 100%;
-  position: absolute;
-  background: linear-gradient(rgba(35, 114, 130, 0.9), #7db4e6);
-}
-
-.header a {
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
   color: aliceblue;
 }
-.header {
+header > h2,p{
   text-align: left;
-  margin-left: 2em;
+}
+header {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  background: linear-gradient(rgba(35, 114, 130, 0.9), #7db4e6);
 }
 dt {
   font-weight: bolder;
@@ -67,48 +69,20 @@ dt::after {
   left: 0;
   right: 0;
 }
-
-.company {
-  font-weight: bolder;
-  font-size: larger;
+#right {
+  order: 2;
+  width: 35%;
+  margin-left: 10px;
+  font-size: 12px;
 }
-.heading > h3 {
-  padding: 0.25em 0.5em; /*上下 左右の余白*/
-  color: #494949; /*文字色*/
-  background: transparent; /*背景透明に*/
-  border-left: solid 5px #7db4e6; /*左線*/
-  font-weight: bolder;
-}
-.heading > h2 {
-  border-bottom: solid 2px #7db4e6;
-  font-weight: bolder;
+#left {
+  font-size: 13px;
+  order: 1;
+  width: 65%;
 }
 
-p,
-h2,
-h3,
-h4,
-li {
-  text-align: left;
-}
-
-.heading {
-  padding-top: 35px;
-  padding-bottom: 34px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: bolder;
-}
 @media all and (max-width: 750px) {
-  h2 {
-    font-size: 18px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  h1 {
-    font-size: 20px;
+header > h2,p{
+    font-size: 10px;
   }
 }
