@@ -57,7 +57,7 @@ dt {
 dd {
   margin-top: 5px;
   margin-bottom: 10px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 dt::after {
