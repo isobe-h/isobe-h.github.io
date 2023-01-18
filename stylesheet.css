@@ -11,14 +11,14 @@ body {
 a {
   text-decoration: none;
 }
-ul{
+ul {
   padding-left: 10px;
 }
-li{
+li {
   padding-bottom: 0.5em;
 }
 .container {
-  width: 90%;
+  width: 900px;
   margin: 0 auto;
   padding-top: 5rem;
   padding-bottom: 1rem;
@@ -34,13 +34,14 @@ li{
   font-weight: bolder;
   text-align: left;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
-  margin: 0 4rem;
+  margin: 0 1rem;
   color: aliceblue;
 }
-header > h2,p{
+header > h2,
+p {
   text-align: left;
 }
 header {
@@ -74,16 +75,30 @@ dt::after {
   order: 2;
   width: 30%;
   margin-left: 10px;
-  font-size: 11px;
+  font-size: 12px;
 }
 #left {
   font-size: 14px;
   order: 1;
   width: 70%;
 }
-
-@media all and (max-width: 750px) {
-header > h2,p{
-    font-size: 10px;
+@media screen and (max-width: 980px) {
+  header > h2,
+  p {
+    font-size: 14px;
+  }
+  .container {
+    width: 95%;
+    flex-flow: column wrap-reverse;
+    margin: 0 auto;
+  }
+  #right,
+  #left {
+    margin: 0 auto;
+    width: 95%;
+    font-size: 14px;
+  }
+  #left {
+    order: 2;
   }
 }
