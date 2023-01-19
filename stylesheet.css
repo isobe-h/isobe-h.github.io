@@ -35,9 +35,10 @@ li {
   text-align: left;
 }
 .flex {
+  width: 900px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
   color: aliceblue;
 }
 header > h2,
@@ -86,6 +87,9 @@ dt::after {
   header > h2,
   p {
     font-size: 14px;
+  }
+  .flex{
+    width: 95%;
   }
   .container {
     width: 95%;
