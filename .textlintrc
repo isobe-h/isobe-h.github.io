@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "html"
+  ],
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": {
+      "no-exclamation-question-mark": false,
+      "ja-no-weak-phrase": false
+    },
+    "spellcheck-tech-word": true,
+    "prh": {
+      "rulePaths": [
+        "node_modules/textlint-rule-preset-icsmedia/dict/prh.yml"
+      ]
+    }
+  }
+}
